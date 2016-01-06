@@ -1,0 +1,18 @@
+<tr>
+    <td>Ha ez itt van akkor van template a list-todo komponensből</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+{{#each model}}
+<tr>
+    <td>#{{id}} {{yield}}</td>
+    <td>{{title}}</td>
+    <td>{{description}}</td>
+    <td>{{assignedto.name}}</td>
+    <td><button {{action "editTodo" this}} class="btn btn-default btn-sm">Szerkeszt</button></td>
+    <td><button {{action "deleteTodo" this}} class="btn btn-default btn-sm">Töröl</button></td>
+</tr>
+{{/each}}

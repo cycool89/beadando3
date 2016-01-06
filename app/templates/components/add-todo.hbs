@@ -1,0 +1,15 @@
+<tr>
+    <td>&nbsp;(add-todo komponensből)</td>
+    <td><input class="form-control" id="title" name="title" type="text" value="{{data.title}}"></td>
+    <td><input class="form-control" id="description" name="description" type="text" value="{{data.dscription}}"></td>
+    <td>
+        <select name="assignedto" id="assignedto" class="form-control">
+        {{#each model}}
+            <option value="{{id}}">{{name}}</option>
+        {{/each}}
+        </select>
+    </td>
+    <td>&nbsp;</td>
+    <td><button {{action "addTodo" this}} class="btn btn-primary">Hozzáad</button></td>
+</tr>
+
