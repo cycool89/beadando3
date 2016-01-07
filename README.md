@@ -31,3 +31,7 @@ Ez után kattintsunk a szerkeszteni kívánt TODO-val egy sorban levő 'szerkesz
 A kívánt módosításokat végrehajtva kattintsunk a 'Módosít' gombra és ezzel a szerkesztés kész.
 
 Egy TODO törléséhez a törölni kívánt TODO-val egy sorban levő 'Törlés' gombot kell kattintani.
+
+## Adatbázis terv
+
+![Adatbázis kapcsolat](docs/adatb.png)
