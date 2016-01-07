@@ -1,53 +1,33 @@
-# Bead
+# Beadandó feladat
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Alkalmazások feljesztése 3.beadandó
+Kigyós János
+LQPTEW
 
-## Prerequisites
+## Követelményanalízis
 
-You will need the following things properly installed on your computer.
+#### Családi todo program.
+A feladatnak mininálisan tartalmaznia kell:
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+- legalább két modellt, egy-sok kapcsolatban
+- legalább 1 űrlapot
+- legalább 1 listázó oldalt
+- legyen lehetőség új felvételére
+- legyen lehetőség meglévő szerkesztésére
+- legyen lehetőség meglévő törlésére
+- REST API végpont kialakítása
+- szerveroldali perzisztálás fájlba
 
-## Installation
+## Felhasználói dokumentáció
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+A program egy egyoldalas weboldalként van implementálva.
+A Családi TODO lista használata:
 
-## Running / Development
+Az új TODO felviteléhez a beviteli mezőket kell kitölteni, cím(title), leírás(description), kihez lesz rendelve a TODO(assignedto) mezőkben.
+Ez után a "hozzáad" gombra kattintva tudjuk hozzáadni a TODO-t a listához.
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+Szerkesztéshez kattintsunk egy 'szerkesztés' gombra, ekkor megjelenik egy új sor a táblázatban beviteli mezőkkel és mellete egy 'Módosít gombbal'.
+Ez után kattintsunk a szerkeszteni kívánt TODO-val egy sorban levő 'szerkeszt gombra' és ezzel kitöltődnek a szerkesztő mezők.
+A kívánt módosításokat végrehajtva kattintsunk a 'Módosít' gombra és ezzel a szerkesztés kész.
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Egy TODO törléséhez a törölni kívánt TODO-val egy sorban levő 'Törlés' gombot kell kattintani.
